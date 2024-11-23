@@ -1,0 +1,21 @@
+<table border="1" [cellPadding]="5">
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Age</th>
+      <th>Gender</th>
+      <th>RollNo</th>
+      <th>Date</th>
+      <th>Action</th>
+    </tr>
+    <tr *ngFor="let student of studentData">
+      <td>{{student.name}}</td>
+      <td>{{student.email}}</td>
+      <td>{{student.age}}</td>
+      <td>{{student.isMale?'Male':'Female'}}</td>
+      <td>{{student.rollNo}}</td>
+      <td>{{student.date}}</td>
+      <td><button (click)="deleteStudentData(student.id)">Delete</button></td>
+      <td><button (click)="updateStudent(student)">Update</button></td>
+    </tr>
+  </table>

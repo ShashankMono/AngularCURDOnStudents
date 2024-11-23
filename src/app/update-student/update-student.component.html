@@ -1,0 +1,16 @@
+<h1>Update Student Data</h1>
+<form [formGroup]="studentForm" (ngSubmit)="updateStudentData()">
+    <input type="number" readonly placeholder="Enter RollNo" formControlName="rollNo">
+    <br>
+    <input type="text" placeholder="Enter Name" formControlName="name">
+    <br>
+    <input type="number" placeholder="Enter Age" formControlName="age">
+    <br>
+    <input type="date" placeholder="Enter Date" formControlName="date">
+    <br>
+    <input type="text" placeholder="Enter Email" formControlName="email">
+    <br>
+    <input type="checkbox" placeholder="isMale?" formControlName="isMale">isMale
+    <br>
+    <button>Update</button>
+</form>
