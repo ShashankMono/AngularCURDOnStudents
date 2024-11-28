@@ -1,0 +1,9 @@
+.addForm{
+    display: flex;
+    justify-content: center;
+    margin-top:50px;
+}
+.addForm label{
+    margin: 10px;
+    padding: 10px;
+}

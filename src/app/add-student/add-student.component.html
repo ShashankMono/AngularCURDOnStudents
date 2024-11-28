@@ -1,15 +1,18 @@
-<form [formGroup]="studentForm" (ngSubmit)="addStudentData()">
-    <input type="number" placeholder="Enter RollNo" formControlName="rollNo">
-    <br>
-    <input type="text" placeholder="Enter Name" formControlName="name">
-    <br>
-    <input type="number" placeholder="Enter Age" formControlName="age">
-    <br>
-    <input type="date" placeholder="Enter Date" formControlName="date">
-    <br>
-    <input type="text" placeholder="Enter Email" formControlName="email">
-    <br>
-    <input type="checkbox" placeholder="isMale?" formControlName="isMale">isMale
-    <br>
-    <button>Add</button>
-</form>
+<div class="addForm">
+    <form [formGroup]="studentForm" (ngSubmit)="addStudentData()">
+        <label>Roll No: </label><input type="number" placeholder="Enter RollNo" formControlName="rollNo">
+        <br>
+        <label>Name: </label><input type="text" placeholder="Enter Name" formControlName="name">
+        <br>
+        <label>Age: </label><input type="number" placeholder="Enter Age" formControlName="age">
+        <br>
+        <label>Admission Date: </label><input type="date" placeholder="Enter Date" formControlName="date">
+        <br>
+        <label>Email: </label><input type="text" placeholder="Enter Email" formControlName="email">
+        <br>
+        <label>IsMale:</label><input type="checkbox" placeholder="isMale?" formControlName="isMale">isMale
+        <br>
+        <button>Add</button>
+    </form>
+</div>
+

@@ -43,7 +43,7 @@ export class UpdateStudentComponent {
   updateStudentData(){
     this.studentService.updateStudent(this.studentForm.value,this.dataToBeUpdated.id).subscribe(()=>{
       alert("Data Updated successfully!");
-      this.router.navigate(['/getStudent']);;
+      this.router.navigate(['/getStudent']);
     });
   }
 }

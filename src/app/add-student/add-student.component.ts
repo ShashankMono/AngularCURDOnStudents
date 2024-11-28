@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import { StudentService } from '../Services/student.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-add-student',
@@ -17,11 +18,12 @@ export class AddStudentComponent {
     rollNo:new FormControl
   })
 
-  constructor(private studentService:StudentService){}
+  constructor(private studentService:StudentService, private router:Router){}
 
   addStudentData(){
     this.studentService.addStudentData(this.studentForm.value).subscribe((data)=>{
       console.log(data);
+      this.router.navigate(['/getStudent']);
     })
     console.log(this.studentForm.value)
   }
